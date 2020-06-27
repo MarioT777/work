@@ -22,7 +22,7 @@ class Logger:
             '%(asctime)s %(filename)s[%(lineno)d] [%(levelname)s]:%(message)s')
         # 创建一个logger
         self.logger = logging.getLogger()
-        self.logger.setLevel(self.logLevel)  # 输出到file的log等级的开关
+        self.logger.setLevel(self.logLevel)  
 
         if logOutType == 'terminal':
             # 创建一个StreamHandler,用于输出到控制台
